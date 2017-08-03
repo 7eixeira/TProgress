@@ -1,0 +1,14 @@
+
+
+local oPbar := TProgress():New( oMainWnd ) // ou dialog...
+local nx :=0
+
+oPbar:reset()
+oPbar:setProgress( 100 )
+
+
+For nx := 1 to 10
+
+	oPbar:setMessage( " ", "Exportando...  " + StrZero(nx,4)  )	
+
+Next
